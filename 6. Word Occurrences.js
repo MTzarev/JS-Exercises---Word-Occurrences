@@ -1,13 +1,13 @@
 function wordOccurrences(arr) {
     let objWord = {};
-let count = 0
+let count = 0;
     for(let word of arr){
         if(!objWord.hasOwnProperty(word)){
-            count =1
-            objWord[word]=count
+            count =1;
+            objWord[word]=count;
         }else{
-            count +=1
-            objWord[word]=count
+            count +=1;
+            objWord[word]=count;
         }
     }
     let sorted = Object.entries(objWord).sort((a,b)=>b[1]-a[1]);
